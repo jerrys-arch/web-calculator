@@ -1,0 +1,24 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+   
+}
+.calculator{
+    padding:20px;
+    width:200px;
+    background: #eee; 
+}
+.calculator form input{
+    width:2%;
+    align-items: center;
+    padding: 10px;
+
+}
