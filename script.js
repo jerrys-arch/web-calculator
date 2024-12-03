@@ -5,7 +5,14 @@ function appendToDisplay(value){
 }
     function calculateResult() {
         try {
-            display.value = new Function('return ' + display.value)();
+           let result= display.value = new Function('return ' + display.value)();
+           if (display.value.includes('/0')){
+            display.value = 'can not divide by zero';
+           }else if(result === Infinity || result === -Infinity){
+            display.value = 'can not divide by zero';
+           }else{
+            display.value = result;
+           }
         } catch (e) {
             display.value = 'Error';
         }
